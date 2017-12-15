@@ -9,8 +9,7 @@ class Solution(object):
         nums1 = []
         nums2 = []
         for i in range(len(nums)):
-            nums1 += nums[i]
-            print(nums1)
+            nums1+=nums[i]
         if r * c != len(nums1):
             return nums
         else:
@@ -27,4 +26,4 @@ class Solution(object):
                 nums3=[]
             return nums2
 s=Solution()
-print(s.matrixReshape([[1,2],[3,4],[5,6]],2,3))
+print(s.matrixReshape([[1,2],[3,4]],1,4))
