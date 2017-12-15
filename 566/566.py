@@ -6,10 +6,11 @@ class Solution(object):
         :type c: int
         :rtype: List[List[int]]
         """
-        flat = sum(nums, [])
+        flat = sum(nums,[])
+        print(flat)
         if len(flat) != r * c:
             return nums
         tuples = zip(*([iter(flat)] * c))
-        return map(list, tuples)
+        return list(map(list, tuples))
 s=Solution()
-print(s.matrixReshape([[1,2],[3,4]],1,4))
+print(s.matrixReshape([[1,2],[3,4],[5,6]],3,2))

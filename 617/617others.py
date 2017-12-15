@@ -12,6 +12,3 @@ class Solution(object):
             return root
         else:
             return t1 or t2
-t1=TreeNode([1,3,2,5])
-t2=TreeNode([3,4,5,5,4,null,7])
-print(t1)
